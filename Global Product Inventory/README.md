@@ -18,7 +18,11 @@ This dataset provides a comprehensive overview of global product inventory, maki
 * **Google Looker Studio**: create a dashaborad for visualization
 ### Data Pipeline 
 * Mage Pipeline:
-  1.api to gsc
-  <img src="image//Api_to_gcs.png" alt="My Image" width="300" />
+  
+  api to gsc
+  
+  <img src="image//api_to_gcs.png" alt="api_to_gcs" width="250" />
 
-  ![Api_to_gcs](image/Api_to_gcs.png)  
+  
+
+
