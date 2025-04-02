@@ -27,7 +27,7 @@ This dataset provides a comprehensive overview of global product inventory, maki
 
   [transform data](https://github.com/linhfk/Zoomcamp2025/blob/main/Global%20Product%20Inventory/mage%20code/transform_taxi_data.py): lower the the case of Product ID and dropna rows
 
-  [export data to gcs](https://github.com/linhfk/Zoomcamp2025/blob/main/Global%20Product%20Inventory/mage%20code/load_inventory_data_to_gsc.py):export data to google cloud storage
+  [export data to gcs](https://github.com/linhfk/Zoomcamp2025/blob/main/Global%20Product%20Inventory/mage%20code/load_inventory_data_to_gsc.py):export data as parquet format to google cloud storage
 
   
 
