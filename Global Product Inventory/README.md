@@ -19,9 +19,11 @@ This dataset provides a comprehensive overview of global product inventory, maki
 ### Data Pipeline 
 * Mage Pipeline:
   
-  api to gsc
+  api to gcs
   
   <img src="image//api_to_gcs.png" alt="api_to_gcs" width="250" />
+
+  load data to gcs
 
   
 
