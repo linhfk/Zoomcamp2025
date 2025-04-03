@@ -29,14 +29,30 @@ This dataset provides a comprehensive overview of global product inventory, maki
 
   [export data to gcs](https://github.com/linhfk/Zoomcamp2025/blob/main/Global%20Product%20Inventory/mage%20code/load_inventory_data_to_gsc.py): export data as parquet format to google cloud storage
 
-*Spark & Bigquery
+* Spark & Bigquery
 
   [Spark Transformation and Save to Bigquery](https://github.com/linhfk/Zoomcamp2025/blob/main/Global%20Product%20Inventory/mage%20code/sparkcode_transform_bigquery.py): clean, transform, enrich columns. For example, create a shelf-lift colums and split Product Dimentions column to Length, Wideth, and Heihth
 
   [Commit to run Spark](https://github.com/linhfk/Zoomcamp2025/blob/main/Global%20Product%20Inventory/mage%20code/spark%20_command.py)
 
-  
+### Dashboard
+Report analysis are in [here]([https://github.com/linhfk/Zoomcamp2025/blob/main/Global%20Product%20Inventory/image/Globlal_Inventory_Report.pdf](https://github.com/linhfk/Zoomcamp2025/blob/main/Global%20Product%20Inventory/image/Globlal_Inventory_Report.pdf))
 
-  
+<img src="image//report.png" alt="report" width="1100" />
+
+### Key findings & Recommendation
+**Findings:**
+* The storage percentage of various products are approximately the same.
+* Over the past two years, the total recorded loss amounted to $85,634,439.28, highlighting the urgent need for improved operational efficiency.
+* A total of 336,438 units of expired products were reported, representing a significant challenge in inventory management.
+* The average product rating over the last two years was 3.02, indicating room for improvement in quality and customer satisfaction.
+* Smartphones had both the lowest rating and the highest quantity of expired stock, emphasizing a critical area for immediate corrective action.
+
+**Recomemdation:**
+* The low product rating indicates customer dissatisfaction. It is essential to identify the root causes and address them to improve the overall customer experience.
+* A substantial stock of expired products has resulted in significant losses. Developing an optimized inventory strategy is crucial to prevent such occurrences in the future.
+* The storage distribution across various products is nearly uniform, suggesting a lack of competitive products. To gain a larger market share, we should focus on developing advantageous products that stand out.
+
+
 
 
