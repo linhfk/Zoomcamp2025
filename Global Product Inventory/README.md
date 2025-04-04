@@ -46,7 +46,7 @@ This dataset provides a comprehensive overview of global product inventory, maki
   [Commit to run Spark](https://github.com/linhfk/Zoomcamp2025/blob/main/Global%20Product%20Inventory/mage%20code/spark%20_command.py)
 
 ### Dashboard
-Report analysis are in [here]([https://github.com/linhfk/Zoomcamp2025/blob/main/Global%20Product%20Inventory/image/Globlal_Inventory_Report.pdf](https://github.com/linhfk/Zoomcamp2025/blob/main/Global%20Product%20Inventory/image/Globlal_Inventory_Report.pdf))
+Report analysis are in [here](https://github.com/linhfk/Zoomcamp2025/blob/main/Global%20Product%20Inventory/image/Globlal_Inventory_Report.pdf)
 
 <img src="image//report.png" alt="report" width="1100" />
 
