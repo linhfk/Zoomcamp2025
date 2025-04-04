@@ -4,8 +4,13 @@
 This Global Product Inventory Analysis project is an innovative end-to-end Data Engineering (DE) pipeline designed to streamline data handling and visualization. The workflow begins by sourcing data from Kaggle, followed by storing it securely in Google Cloud Storage. The data is then meticulously transformed to ensure accuracy and completeness before being loaded into BigQuery for efficient querying and analysis. To bring insights to life, the project leverages Looker Studio for creating visually compelling dashboards. With its well-orchestrated architecture, this project exemplifies the essence of modern data engineering by seamlessly integrating data ingestion, transformation, storage, and visualization into a unified solution.
 
 ## Project Description
-### Project Goal
-The goal of this project is to provide actionable recommendations for improving product storage and optimizing supply chain operations.
+### Problem Statement
+The company is facing substantial financial losses due to an excessive stock of expired products. To address this issue, it is essential to analyze the comprehensive dataset, which includes details such as manufacturing and expiration dates, stock quantities, product ratings, and logistical attributes. By leveraging this data, the project aims to identify the root causes—whether stemming from supply chain inefficiencies, overordering, market fluctuations, or product-specific limitations—and develop actionable recommendations to optimize product storage and supply chain operations. Questions to begin:
+* What is the financial loss over recent years?
+* What is the customer satisfaction rate for each product?
+* Which product has incurred the highest loss?
+* What is the current stock of expired products?
+
 ### Dataset Description
 This dataset provides a comprehensive overview of global product inventory, making it an invaluable resource for optimizing logistics, analyzing e-commerce trends, or conducting supply chain research. It features 14 detailed columns, including unique identifiers such as Product ID and descriptive attributes like Product Name, Category, and Description. Key metrics such as Price, Stock Quantity, and Warrantly Period are included, alongside logistical details like Product Dimensions, Manufacturing Date, and Expiration Date. The dataset also tracks inventory using SKU codes, highlights customer preferences with Product Rating, and offers insights into Color/Size Variations and Product Tags. [Dataset](https://www.kaggle.com/datasets/keyushnisar/global-product-inventory-dataset-2025/data)
 ### Tools
@@ -55,7 +60,7 @@ Report analysis are in [here]([https://github.com/linhfk/Zoomcamp2025/blob/main/
 
 **Recomemdation:**
 * The low product rating indicates customer dissatisfaction. It is essential to identify the root causes and address them to improve the overall customer experience.
-* A substantial stock of expired products has resulted in significant losses. Developing an optimized inventory strategy is crucial to prevent such occurrences in the future.
+* A substantial stock of expired products has incurred considerable losses for the company. To mitigate such setbacks and ensure future operational efficiency, it is imperative to develop an optimized inventory strategy. Identifying the root causes—whether due to overordering, unfavorable market trends, or product limitations—will be vital in shaping a solution
 * The storage distribution across various products is nearly uniform, suggesting a lack of competitive products. To gain a larger market share, we should focus on developing advantageous products that stand out.
 
 
