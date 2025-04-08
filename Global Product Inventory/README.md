@@ -31,19 +31,19 @@ This dataset provides a comprehensive overview of global product inventory, maki
   
   <img src="image//api_to_gcs.png" alt="api_to_gcs" width="250" />
 
-  [load api data ](https://github.com/linhfk/Zoomcamp2025/blob/main/Global%20Product%20Inventory/mage%20code/export_global_inv_data__to_gsc.py): ingest data from Kaggle and specific the data types
+  [load api data ](https://github.com/linhfk/Zoomcamp2025/blob/main/Global%20Product%20Inventory/code/export_global_inv_data__to_gsc.py): ingest data from Kaggle and specific the data types
 
-  [transform data](https://github.com/linhfk/Zoomcamp2025/blob/main/Global%20Product%20Inventory/mage%20code/transform_data.py): lower the the case of Product ID and dropna rows
+  [transform data](https://github.com/linhfk/Zoomcamp2025/blob/main/Global%20Product%20Inventory/code/transform%20data.py): lower the the case of Product ID and dropna rows
 
-  [export data to gcs](https://github.com/linhfk/Zoomcamp2025/blob/main/Global%20Product%20Inventory/mage%20code/load_inventory_data_to_gsc.py): export data as parquet format to google cloud storage
+  [export data to gcs](https://github.com/linhfk/Zoomcamp2025/blob/main/Global%20Product%20Inventory/code/load_inventory_data_to_gsc.py): export data as parquet format to google cloud storage
 
   [trigger](https://github.com/linhfk/Zoomcamp2025/blob/main/Global%20Product%20Inventory/image/trigger.png)
 
 * Spark & Bigquery
 
-  [Spark Transformation and Save to Bigquery](https://github.com/linhfk/Zoomcamp2025/blob/main/Global%20Product%20Inventory/mage%20code/sparkcode_transform_bigquery.py): clean, transform, enrich columns. For example, create a shelf-lift colums and split Product Dimentions column to Length, Wideth, and Heihth
+  [Spark Transformation and Save to Bigquery](https://github.com/linhfk/Zoomcamp2025/blob/main/Global%20Product%20Inventory/code/sparkcode_transform_bigquery.py): clean, transform, enrich columns. For example, create a shelf-lift colums and split Product Dimentions column to Length, Wideth, and Heihth
 
-  [Commit to run Spark](https://github.com/linhfk/Zoomcamp2025/blob/main/Global%20Product%20Inventory/mage%20code/spark%20_command.py)
+  [Commit to run Spark](https://github.com/linhfk/Zoomcamp2025/blob/main/Global%20Product%20Inventory/code/spark%20_command.py)
 
 ### Dashboard
 Report analysis are in [here](https://github.com/linhfk/Zoomcamp2025/blob/main/Global%20Product%20Inventory/image/Globlal_Inventory_Report.pdf)
@@ -78,10 +78,14 @@ Kaggle to GCS
   * Run docker desktop
   * Run Mage: [Quickstart Mage](https://docs.mage.ai/getting-started/setup#docker)
   * Create your pipeline:
-        1. [Build Data Loader](https://github.com/linhfk/Zoomcamp2025/blob/main/Global%20Product%20Inventory/mage%20code/export_global_inv_data__to_gsc.py)
-        2. [Build Data Tramformer](https://github.com/linhfk/Zoomcamp2025/blob/main/Global%20Product%20Inventory/mage%20code/transform_data.py)
-        3. [Build exporter](https://github.com/linhfk/Zoomcamp2025/blob/main/Global%20Product%20Inventory/mage%20code/load_inventory_data_to_gsc.py)
-        4. [Build triger](https://github.com/linhfk/Zoomcamp2025/blob/main/Global%20Product%20Inventory/mage%20code/load_inventory_data_to_gsc.py)
+    
+    1. [Build Data Loader](https://github.com/linhfk/Zoomcamp2025/blob/main/Global%20Product%20Inventory/code/export_global_inv_data__to_gsc.py)
+    
+    2. [Build Data Tramformer](https://github.com/linhfk/Zoomcamp2025/blob/main/Global%20Product%20Inventory/code/transform%20data.py)
+    
+    3. [Build exporter](https://github.com/linhfk/Zoomcamp2025/blob/main/Global%20Product%20Inventory/code/load_inventory_data_to_gsc.py)
+    
+    4. [Build triger](https://github.com/linhfk/Zoomcamp2025/blob/main/Global%20Product%20Inventory/code/load_inventory_data_to_gsc.py)
          
 
 
