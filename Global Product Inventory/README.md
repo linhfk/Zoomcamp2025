@@ -63,6 +63,28 @@ Report analysis are in [here](https://github.com/linhfk/Zoomcamp2025/blob/main/G
 * A substantial stock of expired products has incurred considerable losses for the company. To mitigate such setbacks and ensure future operational efficiency, it is imperative to develop an optimized inventory strategy. Identifying the root causes—whether due to overordering, unfavorable market trends, or product limitations—will be vital in shaping a solution
 * The storage distribution across various products is nearly uniform, suggesting a lack of competitive products. To gain a larger market share, we should focus on developing advantageous products that stand out.
 
+## Reproduccibility
+### Prerequsites
+1. [Install Docker](https://docs.docker.com/engine/install/)
+2. [Set up Colob](https://colab.research.google.com/)
+3. [Set up Google Cloud Storage](https://cloud.google.com/appengine/docs/legacy/standard/python/googlecloudstorageclient/setting-up-cloud-storage)
+4. [Set up a Serivce Account Key](https://cloud.google.com/iam/docs/keys-create-delete): create a service account key and download it as Json file
+5. [Set bucket in Google Cloud Storage](https://cloud.google.com/storage/docs/creating-buckets#console)
+6. [Set up Bigquery](https://cloud.google.com/bigquery/docs/introduction)
+7. 
+
+### Procedure
+Kaggle to GCS
+  * Run docker desktop
+  * Run Mage: [Quickstart Mage](https://docs.mage.ai/getting-started/setup#docker)
+  * Create your pipeline:
+        1. [Build Data Loader](https://github.com/linhfk/Zoomcamp2025/blob/main/Global%20Product%20Inventory/mage%20code/export_global_inv_data__to_gsc.py)
+        2. [Build Data Tramformer](https://github.com/linhfk/Zoomcamp2025/blob/main/Global%20Product%20Inventory/mage%20code/transform_data.py)
+        3. [Build exporter](https://github.com/linhfk/Zoomcamp2025/blob/main/Global%20Product%20Inventory/mage%20code/load_inventory_data_to_gsc.py)
+        4. [Build triger](https://github.com/linhfk/Zoomcamp2025/blob/main/Global%20Product%20Inventory/mage%20code/load_inventory_data_to_gsc.py)
+         
+
+
 
 
 
