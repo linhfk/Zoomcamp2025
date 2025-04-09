@@ -19,7 +19,7 @@ This dataset provides a comprehensive overview of global product inventory, maki
 * **Google Cloud Storage**: storage data
 * **Colab**: generate python script for Spark
 * **Spark**：transform and partition the dataset
-* **Google Bigquery**: performi SQL analytical queries and storage structured data
+* **Google Bigquery**: perform SQL analytical queries and storage structured data
 * **Google Looker Studio**: create a dashaborad for visualization
 ### Architecture
 <img src="image//Workflow.png" alt="Workflow" width="800" />
@@ -37,7 +37,9 @@ This dataset provides a comprehensive overview of global product inventory, maki
 
   [export data to gcs](https://github.com/linhfk/Zoomcamp2025/blob/main/Global%20Product%20Inventory/code/load_inventory_data_to_gsc.py): export data as parquet format to google cloud storage
 
-  [trigger](https://github.com/linhfk/Zoomcamp2025/blob/main/Global%20Product%20Inventory/image/trigger.png)
+  [trigger](https://github.com/linhfk/Zoomcamp2025/blob/main/Global%20Product%20Inventory/image/trigger.png):
+
+  <img src="image//trigger.png" alt="trigge" width="500" />
 
 * Spark & Bigquery
 
@@ -46,7 +48,7 @@ This dataset provides a comprehensive overview of global product inventory, maki
   [Commit to run Spark](https://github.com/linhfk/Zoomcamp2025/blob/main/Global%20Product%20Inventory/code/spark%20_command.py)
 
 ### Dashboard
-Report analysis are in [here](https://github.com/linhfk/Zoomcamp2025/blob/main/Global%20Product%20Inventory/image/Globlal_Inventory_Report.pdf)
+Report analysis are in [here](https://lookerstudio.google.com/u/0/reporting/729d6280-49be-46c8-8694-729a172ee784/page/inJFF/edit)
 
 <img src="image//report.png" alt="report" width="1100" />
 
@@ -69,7 +71,7 @@ Report analysis are in [here](https://github.com/linhfk/Zoomcamp2025/blob/main/G
 2. [Set up Colob](https://colab.research.google.com/)
 3. [Set up Google Cloud Storage](https://cloud.google.com/appengine/docs/legacy/standard/python/googlecloudstorageclient/setting-up-cloud-storage)
 4. [Set up a Serivce Account Key](https://cloud.google.com/iam/docs/keys-create-delete): create a service account key and download it as Json file
-5. [Set bucket in Google Cloud Storage](https://cloud.google.com/storage/docs/creating-buckets#console)
+5. [Set up a bucket in Google Cloud Storage](https://cloud.google.com/storage/docs/creating-buckets#console)
 6. [Set up Bigquery](https://cloud.google.com/bigquery/docs/introduction)
 7. [Set up dataset in Bigquery](https://cloud.google.com/bigquery/docs/datasets)
 8. [Set up Mage Environment](https://github.com/linhfk/Zoomcamp2025/tree/main/Global%20Product%20Inventory/mage%20environment):Put the service account key to mage environment folder
@@ -81,7 +83,8 @@ Kaggle to GCS
   * Run docker desktop
   * Run Mage: [Quickstart Mage](https://docs.mage.ai/getting-started/setup#docker): confige the io_config.yaml
   <img src="image//io_config.png" alt="io_config" width="800" />
-  Update your service account key 
+
+  #Update your service account key 
   
   * Create your pipeline:
     
