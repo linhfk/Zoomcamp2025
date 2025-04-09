@@ -22,7 +22,7 @@ This dataset provides a comprehensive overview of global product inventory, maki
 * **Google Bigquery**: performi SQL analytical queries and storage structured data
 * **Google Looker Studio**: create a dashaborad for visualization
 ### Architecture
-<img src="image//workflow.png" alt="workflow" width="800" />
+<img src="image//Workflow.png" alt="Workflow" width="800" />
 
 ### Data Pipeline 
 * Mage Pipeline:
