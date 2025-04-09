@@ -15,27 +15,27 @@ Start the Docker container:
 
 Navigate to http://localhost:6789  
     
-  ├── mage_data
-  │   └── global-product-inventory
-  ├── global-product-inventory
-  │   ├── __pycache__
-  │   ├── charts
-  │   ├── custom
-  │   ├── data_exporters
-  │   ├── data_loaders
-  │   ├── dbt
-  │   ├── extensions
-  │   ├── interactions
-  │   ├── pipelines
-  │   ├── scratchpads
-  │   ├── transformers
-  │   ├── utils
-  │   ├── __init__.py
-  │   ├── io_config.yaml
-  │   ├── metadata.yaml
-  │   └── requirements.txt
-  ├── Dockerfile
-  ├── README.md
-  ├── dev.env
-  ├── docker-compose.yml
+        ├── mage_data
+        │  └── global-product-inventory
+        ├── global-product-inventory
+        │   ├── __pycache__
+        │   ├── charts
+        │   ├── custom
+        │   ├── data_exporters
+        │   ├── data_loaders
+        │   ├── dbt
+        │   ├── extensions
+        │   ├── interactions
+        │   ├── pipelines
+        │   ├── scratchpads
+        │   ├── transformers
+        │   ├── utils
+        │   ├── __init__.py
+        │   ├── io_config.yaml
+        │   ├── metadata.yaml
+        │   └── requirements.txt
+        ├── Dockerfile
+        ├── README.md
+        ├── dev.env
+        ├── docker-compose.yml
  
