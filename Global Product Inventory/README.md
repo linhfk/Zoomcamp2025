@@ -64,19 +64,25 @@ Report analysis are in [here](https://github.com/linhfk/Zoomcamp2025/blob/main/G
 * The storage distribution across various products is nearly uniform, suggesting a lack of competitive products. To gain a larger market share, we should focus on developing advantageous products that stand out.
 
 ## Reproduccibility
-### Prerequsites
+### Prerequsites & References
 1. [Install Docker](https://docs.docker.com/engine/install/)
 2. [Set up Colob](https://colab.research.google.com/)
 3. [Set up Google Cloud Storage](https://cloud.google.com/appengine/docs/legacy/standard/python/googlecloudstorageclient/setting-up-cloud-storage)
 4. [Set up a Serivce Account Key](https://cloud.google.com/iam/docs/keys-create-delete): create a service account key and download it as Json file
 5. [Set bucket in Google Cloud Storage](https://cloud.google.com/storage/docs/creating-buckets#console)
 6. [Set up Bigquery](https://cloud.google.com/bigquery/docs/introduction)
-7. 
+7. [Set up dataset in Bigquery](https://cloud.google.com/bigquery/docs/datasets)
+8. [Set up Mage Environment](https://github.com/linhfk/Zoomcamp2025/tree/main/Global%20Product%20Inventory/mage%20environment):Put the service account key to mage environment folder
+9. [Create a cluster in Datapro](https://cloud.google.com/dataproc/docs/guides/create-cluster#dataproc-create-cluster-console)
+10.[Connect Bugquery to Looker Studio](https://cloud.google.com/looker/docs/studio/connect-to-google-bigquery)
 
 ### Procedure
 Kaggle to GCS
   * Run docker desktop
-  * Run Mage: [Quickstart Mage](https://docs.mage.ai/getting-started/setup#docker)
+  * Run Mage: [Quickstart Mage](https://docs.mage.ai/getting-started/setup#docker): confige the io_config.yaml
+  <img src="image//io_config.png" alt="io_config" width="800" />
+  Update your service account key 
+  
   * Create your pipeline:
     
     1. [Build Data Loader](https://github.com/linhfk/Zoomcamp2025/blob/main/Global%20Product%20Inventory/code/export_global_inv_data__to_gsc.py)
@@ -86,6 +92,12 @@ Kaggle to GCS
     3. [Build exporter](https://github.com/linhfk/Zoomcamp2025/blob/main/Global%20Product%20Inventory/code/load_inventory_data_to_gsc.py)
     
     4. [Build triger](https://github.com/linhfk/Zoomcamp2025/blob/main/Global%20Product%20Inventory/code/load_inventory_data_to_gsc.py)
+
+    5. Transform Data in Dataproc & load data to bigquery
+         *  Upload [sparkcode_transform_bigquery.py](https://github.com/linhfk/Zoomcamp2025/blob/main/Global%20Product%20Inventory/code/sparkcode_transform_bigquery.py) to GCS
+         *  Run [spark command.py](https://github.com/linhfk/Zoomcamp2025/blob/main/Global%20Product%20Inventory/code/spark%20_command.py) in Colob
+    6. Connect Bugquery to Looker Studio
+         *  Build visualizations
          
 
 
