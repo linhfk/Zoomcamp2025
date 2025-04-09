@@ -31,11 +31,11 @@ This dataset provides a comprehensive overview of global product inventory, maki
   
   <img src="image//api_to_gcs.png" alt="api_to_gcs" width="250" />
 
-  [load api data ](https://github.com/linhfk/Zoomcamp2025/blob/main/Global%20Product%20Inventory/code/export_global_inv_data__to_gsc.py): ingest data from Kaggle and specific the data types
+  [load api data ](https://github.com/linhfk/Zoomcamp2025/blob/main/Global%20Product%20Inventory/code/load_inventory_data_to_gsc.py): ingest data from Kaggle and specific the data types
 
   [transform data](https://github.com/linhfk/Zoomcamp2025/blob/main/Global%20Product%20Inventory/code/transform%20data.py): lower the the case of Product ID and dropna rows
 
-  [export data to gcs](https://github.com/linhfk/Zoomcamp2025/blob/main/Global%20Product%20Inventory/code/load_inventory_data_to_gsc.py): export data as parquet format to google cloud storage
+  [export data to gcs](https://github.com/linhfk/Zoomcamp2025/blob/main/Global%20Product%20Inventory/code/export_global_inv_data__to_gsc.py): export data as parquet format to google cloud storage
 
   [trigger](https://github.com/linhfk/Zoomcamp2025/blob/main/Global%20Product%20Inventory/image/trigger.png):
 
@@ -76,7 +76,8 @@ Report analysis are in [here](https://lookerstudio.google.com/u/0/reporting/729d
 7. [Set up dataset in Bigquery](https://cloud.google.com/bigquery/docs/datasets)
 8. [Set up Mage Environment](https://github.com/linhfk/Zoomcamp2025/tree/main/Global%20Product%20Inventory/mage%20environment):Put the service account key to mage environment folder
 9. [Create a cluster in Datapro](https://cloud.google.com/dataproc/docs/guides/create-cluster#dataproc-create-cluster-console)
-10.[Connect Bugquery to Looker Studio](https://cloud.google.com/looker/docs/studio/connect-to-google-bigquery)
+10. [Connect Bugquery to Looker Studio](https://cloud.google.com/looker/docs/studio/connect-to-google-bigquery)
+   
 
 ### Procedure
 Kaggle to GCS
@@ -88,13 +89,13 @@ Kaggle to GCS
   
   * Create your pipeline:
     
-    1. [Build Data Loader](https://github.com/linhfk/Zoomcamp2025/blob/main/Global%20Product%20Inventory/code/export_global_inv_data__to_gsc.py)
+    1. [Build Data Loader](https://github.com/linhfk/Zoomcamp2025/blob/main/Global%20Product%20Inventory/code/load_inventory_data_to_gsc.py)
     
     2. [Build Data Tramformer](https://github.com/linhfk/Zoomcamp2025/blob/main/Global%20Product%20Inventory/code/transform%20data.py)
     
-    3. [Build exporter](https://github.com/linhfk/Zoomcamp2025/blob/main/Global%20Product%20Inventory/code/load_inventory_data_to_gsc.py)
+    3. [Build Data Exporter](https://github.com/linhfk/Zoomcamp2025/blob/main/Global%20Product%20Inventory/code/load_inventory_data_to_gsc.py)
     
-    4. [Build triger](https://github.com/linhfk/Zoomcamp2025/blob/main/Global%20Product%20Inventory/code/load_inventory_data_to_gsc.py)
+    4. [Build triger](https://github.com/linhfk/Zoomcamp2025/blob/main/Global%20Product%20Inventory/image/trigger.png)
 
     5. Transform Data in Dataproc & load data to bigquery
          *  Upload [sparkcode_transform_bigquery.py](https://github.com/linhfk/Zoomcamp2025/blob/main/Global%20Product%20Inventory/code/sparkcode_transform_bigquery.py) to GCS
