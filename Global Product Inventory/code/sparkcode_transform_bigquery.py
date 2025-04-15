@@ -24,13 +24,13 @@ spark.conf.set('temporaryGcsBucket', 'dataproc-temp-us-east1-891469561669-rrcqgw
 
 df_Inv = spark.read.parquet(input_data)
 
-df = df_Inv.toPandas()
+df = df_Inv.toPandas()                                                          #Convert Spark to Pandas Dataframe
 
-df.columns = [col.replace("/", "_").replace(" ", "_") for col in df.columns]
+df.columns = [col.replace("/", "_").replace(" ", "_") for col in df.columns]    # replace '/' and ' ' to '_'
 
-df['Shelf_Life'] = (df['Expiration_Date']-df['Manufacturing_Date']).dt.days
+df['Shelf_Life'] = (df['Expiration_Date']-df['Manufacturing_Date']).dt.days     # add Shelf_Life column
 
-df['Dimensions']=df['Product_Dimensions'].str.replace(' cm', '')
+df['Dimensions']=df['Product_Dimensions'].str.replace(' cm', '')                # Split the Dimension to Length, width, and Height, and add Volume column
 dim = df['Dimensions'].str.split('x', expand=True)
 df['Length'] = dim[0].astype(float)
 df['Width'] = dim[1].astype(float)
@@ -76,12 +76,12 @@ order by
 
 
 
-df_result.coalesce(1).write.format('bigquery') \
+df_result.coalesce(1).write.format('bigquery') \              # saved the transformed data to bigquery
     .option('table', output_report) \
     .mode('overwrite') \
     .save()
 
-df_spark.write.format('bigquery') \
+df_spark.write.format('bigquery') \                           # save the clean data to bigqyery
     .option('table', output_data) \
     .mode('overwrite') \
     .save()
