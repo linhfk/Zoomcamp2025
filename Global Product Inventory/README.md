@@ -82,10 +82,13 @@ Report analysis are in [here](https://lookerstudio.google.com/u/0/reporting/729d
 ### Procedure
 Kaggle to GCS
   * Run docker desktop
-  * Run Mage: [Quickstart Mage](https://docs.mage.ai/getting-started/setup#docker): confige the io_config.yaml
+  * Run Mage: [Quickstart Mage](https://docs.mage.ai/getting-started/setup#docker) 
+  * Confige the io_config.yaml(this file use to make the connection between Mage and GCS)
+      1. Set up Service Account (Reference 3)
+      2. Download the Json file
+      3. Add the file path to io_config.yaml(as following image)
   <img src="image//io_config.png" alt="io_config" width="800" />
 
-  #Update your service account key 
   
   * Create your pipeline:
     
@@ -94,13 +97,22 @@ Kaggle to GCS
     2. [Build Data Tramformer](https://github.com/linhfk/Zoomcamp2025/blob/main/Global%20Product%20Inventory/code/transform%20data.py)
     
     3. [Build Data Exporter](https://github.com/linhfk/Zoomcamp2025/blob/main/Global%20Product%20Inventory/code/load_inventory_data_to_gsc.py)
+         *  Create a bucket in GCS
+         *  Set up Exporter block
     
-    4. [Build triger](https://github.com/linhfk/Zoomcamp2025/blob/main/Global%20Product%20Inventory/image/trigger.png)
+    4. [Build triger](https://github.com/linhfk/Zoomcamp2025/blob/main/Global%20Product%20Inventory/image/trigger.png): follow the image to setup the triger
 
     5. Transform Data in Dataproc & load data to bigquery
+         *  Set up Colab (Reference 2)
          *  Upload [sparkcode_transform_bigquery.py](https://github.com/linhfk/Zoomcamp2025/blob/main/Global%20Product%20Inventory/code/sparkcode_transform_bigquery.py) to GCS
+         *  Connect Colab with GCS
+      
+                # Run in Colab
+                from google.colab import auth
+                auth.authenticate_user()
          *  Run [spark command.py](https://github.com/linhfk/Zoomcamp2025/blob/main/Global%20Product%20Inventory/code/spark%20_command.py) in Colob
     6. Connect Bugquery to Looker Studio
+         *  Connect Bugquery to Looker Studio (Refernce 10)
          *  Build visualizations
          
 
