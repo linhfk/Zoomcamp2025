@@ -23,7 +23,7 @@ def export_data_to_google_cloud_storage(df: DataFrame, **kwargs) -> None:
     config_profile = 'default'
 
     bucket_name = 'global_inventory_data'
-    object_key = f'Inventory-{now_fpath}/daily-trips.parquet' #parquet file name in the bucket
+    object_key = f'Inventory-{now_fpath}/daily-trips.parquet' #output parquet file to gcs and the execution date to the file name
 
     GoogleCloudStorage.with_config(ConfigFileLoader(config_path, config_profile)).export(
         df,
