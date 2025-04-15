@@ -11,10 +11,10 @@ if 'test' not in globals():
 
 @transformer
 def transform(data, *args, **kwargs):
-    data['Product ID'] = (data['Product ID']
+    data['Product ID'] = (data['Product ID']              #lower Product ID case
                     .str.lower()
     )
-    data = data.dropna()
+    data = data.dropna()                                 # drop NA data
     return data
 
 
