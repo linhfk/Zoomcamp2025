@@ -43,7 +43,7 @@ This dataset provides a comprehensive overview of global product inventory, maki
 
 * Spark & Bigquery
 
-  [Spark Transformation and Save to Bigquery](https://github.com/linhfk/Zoomcamp2025/blob/main/Global%20Product%20Inventory/code/sparkcode_transform_bigquery.py): clean, transform, enrich columns. For example, create a shelf-lift colums and split Product Dimentions column to Length, Wideth, and Heihth
+  [Spark Transformation and Save to Bigquery](https://github.com/linhfk/Zoomcamp2025/blob/main/Global%20Product%20Inventory/code/sparkcode_transform_bigquery.py): clean, transform, enrich columns.
 
   [Commit to run Spark](https://github.com/linhfk/Zoomcamp2025/blob/main/Global%20Product%20Inventory/code/spark%20_command.py)
 
@@ -114,6 +114,10 @@ Kaggle to GCS
     6. Connect Bugquery to Looker Studio
          *  Connect Bugquery to Looker Studio (Refernce 10)
          *  Build visualizations
+    7. Analyse the visualization
+         * Key findings
+         * Recommendation
+         
          
 
 
